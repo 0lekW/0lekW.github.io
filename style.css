@@ -1,0 +1,351 @@
+:root {
+    --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console,
+      monospace;
+    --color-subtext: #888888;
+}
+
+body {
+    background-color: #111111;
+    color: #ebebeb;
+    font-size: 125%;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .content {
+    margin-bottom: 2rem;
+    max-width: 60rem;
+    margin: 0 auto;
+    font-family: var(--font-sans);
+    margin-top: 4rem;
+    line-height: 1.3;
+  }
+
+  /* NAVIGATION */
+  
+.site-header {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+.site-nav {
+    display: flex;
+    max-width: 80rem;
+    justify-content: space-between;
+    margin: 0 auto;
+    font-family: var(--font-mono);
+  }
+  
+.site-nav a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+  }
+  
+.site-nav .logo {
+    font-weight: bold;
+    padding-left: 0;
+  }
+  
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+  }
+  
+@media screen and (max-width: 61rem) {
+    .site-nav,
+    .main-menu {
+      flex-direction: column;
+    }
+  
+.site-nav a {
+      padding: 0.5rem;
+      padding-left: 0;
+    }
+  }
+
+  .profile-card {
+    background: #111;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+  
+  .profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  
+  .profile-header h1 {
+    margin: 0;
+    font-size: 2.25rem;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .icon-link {
+    background: rgba(255,255,255,0.05);
+    padding: 10px;
+    border-radius: 8px;
+    line-height: 0;
+  }
+  
+  .icon {
+    width: 20px;
+    height: 20px;
+    color: white;
+  }
+  
+  .location {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #9ca3af;
+    margin-bottom: 16px;
+  }
+  
+  .bio {
+    margin: 0;
+  }
+
+
+  .experience-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: system-ui, -apple-system, sans-serif;
+    color: #ebebeb;
+    background-color: #111111;
+  }
+  
+  /* Timeline container */
+  .timeline {
+    position: relative;
+    padding-left: 30px;
+  }
+  
+  /* Vertical line */
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #666;
+  }
+  
+  /* Timeline items */
+  .timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+  }
+  
+  /* Timeline dots */
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -37px;
+    top: 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #2ed8a0;
+    border: 4px solid #ffffff;
+  }
+  
+  /* Company name */
+  .company {
+    margin-bottom: 8px;
+  }
+  
+  .company a {
+    color: #2ed8a0;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  /* Role styles */
+  .role {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #f1f5f9;
+    margin-bottom: 4px;
+  }
+  
+  /* Date styles */
+  .date {
+    font-size: 0.875rem;
+    color: #94a3b8;
+    margin-bottom: 8px;
+  }
+  
+  /* Description styles */
+  .description {
+    color: #cbd5e1;
+    line-height: 1.5;
+  }
+  
+  .description a {
+    color: #e25b2a;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  /* Last item spacing */
+  .timeline-item:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Projects section container */
+.projects-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: system-ui, -apple-system, sans-serif;
+    color: #ebebeb;
+  }
+  
+  /* Projects grid */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Project card */
+  .project-card {
+    position: relative;
+    height: 200px;
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    background-color: #1a1a1a;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Card background */
+  .card-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  
+  .background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+    transition: opacity 0.3s ease;
+  }
+  
+  .project-card:hover .background-image {
+    opacity: 0.4;
+  }
+  
+  /* Card content */
+  .card-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Card header with logo and title */
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .project-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #ffffff;
+  }
+  
+  .card-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #ffffff;
+  }
+  
+  /* Project description */
+  .project-description {
+    margin: 0;
+    color: #dddddd;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    opacity: 0.9;
+  }
+  
+  /* Responsive design */
+  @media (min-width: 768px) {
+    .projects-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  /* Optional: Add a subtle shadow when hovering */
+  .project-card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  }
+
+  .site-footer {
+    max-width: 60rem;
+    margin: 5rem auto 2rem;
+    padding-top: 1rem;
+    text-align: center;
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 1rem;
+    border-top: 1px solid #313131;
+  }
+  
+  .credits {
+    margin-top: -10px;
+  }
+  
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+  
+  .site-footer a {
+    color: #31929A;
+    text-decoration: none;
+    position: relative;
+  }

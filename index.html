@@ -1,21 +1,19 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Olek</title>
-        <link rel="stylesheet" href="olekcss.css">
-    </head>
-    <body>
-        <div id="tiles"></div>
-        <div id="elements" class="centered">
-            <h1 id="title">Olek</h1>
-            <div id="links">
-                <a class="link">Portfolio</a>
-                <a href="https://github.com/0lekW" class="link">GitHub</a>
-            </div>
-            <p id="someText">Try clicking anywhere on the background!</p>
-        </div>
+<head>
+    <script>
+        // Get browser language
+        const language = navigator.language || navigator.userLanguage;
         
-        
-        <script src="anime.min.js"></script>
-        <script src="olekjs.js"></script>
-    </body>
+        // Redirect based on language
+        if (language.startsWith('pl')) {
+            window.location.href = "/pl/";
+        } else {
+            window.location.href = "/en/";
+        }
+    </script>
+</head>
+<body>
+    <p>Redirecting to <a href="/en/">English version</a>...</p>
+</body>
 </html>
