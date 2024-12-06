@@ -551,3 +551,95 @@ body {
       font-size: 1rem;
     }
   }
+
+  figure {
+    margin: 2rem auto 2rem;
+    text-align: center;
+  }
+  
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .showcase-card {
+    padding: 20px;
+    border: 1px solid #27272a;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .showcase-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .showcase-header h1 {
+    margin: 0;
+  }
+  
+  .project-icon {
+    width: 3rem;
+    height: 3rem;
+  }
+  
+  .tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .tech-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid #27272a;
+    border-radius: 10px;
+    background-color: #1a1a1a;
+  }
+  
+  .tech-icon {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  
+  .tech-icon svg {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .project-desc {
+    color: #9ca3af;
+    margin: 0;
+    padding-top: 10px;
+  }
+  
+  .cta-button {
+    margin-top: 1.5rem;
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    background-color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  @media (max-width: 640px) {
+    .tech-stack {
+      flex-direction: column;
+    }
+  
+    .tech-badge {
+      width: fit-content;
+    }
+  }
