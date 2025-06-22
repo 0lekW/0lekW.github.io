@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang=en>
+    <head>
+        <meta name=viewport content="width=device-width,initial-scale=1">
+        <meta name=description content="Software Engineer - Alex Wardega">
+        <meta name=author content="Alex Wardega">
+        <title>Alex Wardega</title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <link rel=stylesheet href="/assets/style.css" type=text/css media=all>
+    </head>
+    <body>
+
+        <header class=site-header>
+            <nav class=site-nav>
+                <a class=logo href=/en>Alex Wardega</a>
+                <ul class=menu>
+                    <li>
+                        <a href=/en/about>About Me</a>
+                    </li>
+                    <li>
+                        <a href=/en/experience>Experience</a>
+                    </li>
+                    <li>
+                        <a href=/en/projects class=active>Projects</a>
+                    </li>
+                    <li>
+                        <a href=/en/contact>Contact Me</a>
+                    </li>
+                </ul>
+                <ul class=menu>
+                    <li>
+                        <a href=/pl>Polski</a>
+                    </li>
+                </ul>
+            </nav>
+            <style>
+                .menu .active {
+                    font-weight: 700
+                }
+            </style>
+        </header>
+
+        <main class=content>
+
+            <figure class=full-width>
+                <picture>
+                    <img src=/images/xmbWavpp.png alt="Cover image" loading=lazy decoding=async>
+                </picture>
+            </figure>
+
+            <div class="showcase-card">
+                <div class="showcase-header">
+                  <img src=/images/xmbWavppLogo.png class="project-icon">
+                  <h1>xmbWavpp</h1>
+                </div>
+              
+                <div class="tech-stack">
+                    <div class="tech-badge">
+                        <div class="tech-icon">
+                          <svg viewBox="0 0 312.553 312.553" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#fff" d="M302.553,0H10C4.477,0,0,4.478,0,10v292.553c0,5.522,4.477,10,10,10h292.553c5.523,0,10-4.478,10-10V10 C312.553,4.478,308.076,0,302.553,0z M122.031,193.288c-9.481,8.296-21.592,12.865-34.102,12.865 c-28.108,0-50.976-22.4-50.976-49.934c0-27.47,22.868-49.818,50.976-49.818c12.527,0,24.597,4.53,33.987,12.756 c3.874,3.392,4.263,9.283,0.87,13.156c-3.393,3.874-9.283,4.263-13.157,0.869c-5.988-5.245-13.695-8.135-21.7-8.135 c-17.827,0-32.33,13.983-32.33,31.172c0,17.251,14.503,31.286,32.33,31.286c7.992,0,15.742-2.931,21.822-8.251 c3.875-3.393,9.765-2.998,13.156,0.877C126.298,184.007,125.906,189.898,122.031,193.288z M185.951,165.6h-18.789v18.79 c0,5.149-4.174,9.323-9.324,9.323s-9.324-4.174-9.324-9.323V165.6h-18.788c-5.149,0-9.324-4.174-9.324-9.323 s4.174-9.323,9.324-9.323h18.788v-18.789c0-5.149,4.174-9.323,9.324-9.323s9.324,4.174,9.324,9.323v18.789h18.789 c5.149,0,9.324,4.174,9.324,9.323S191.101,165.6,185.951,165.6z M266.276,165.6h-18.789v18.79c0,5.149-4.174,9.323-9.324,9.323 c-5.149,0-9.324-4.174-9.324-9.323V165.6h-18.788c-5.149,0-9.324-4.174-9.324-9.323s4.174-9.323,9.324-9.323h18.788v-18.789 c0-5.149,4.174-9.323,9.324-9.323c5.149,0,9.324,4.174,9.324,9.323v18.789h18.789c5.149,0,9.324,4.174,9.324,9.323 S271.426,165.6,266.276,165.6z"/>
+                          </svg>
+                        </div>
+                        <span>C++</span>
+                      </div>
+                </div>
+              
+                <p class="project-desc">Command-line animation that replicates the iconic wave effect from the PlayStation 3 XMB (Cross Media Bar) menu.</p>
+                
+                <a href="https://github.com/0lekW/xmbWavpp" target="_blank">
+                  <button class="cta-button">Open</button>
+                </a>
+            </div>
+
+            <p>
+                Inspired the the classic menu from the PS3 - serves as visual candy in the terminal.
+            </p>
+
+            <h2>Why did I make xmbWavpp?</h2>
+            <p>
+                This project was actually intially a way for me to explore using a Linux distrubution for the first time. <br>
+                "Ricing" is a popular concept in Linux, and many people who share their Linux modifications will often use fun visual tools like Pipes and CMatrix to take nice screenshots of their work.
+                <br> This is my take on one of those classic CLI animations.
+            </p>
+
+            <h2>What does this project contain?</h2>
+            <ul>
+                <li>Pure C++ implementation (single-file)</li>
+                <li>Animated sine wave rendering in terminal</li>
+                <li>Frame-by-frame display with terminal clearing</li>
+                <li>Uses ANSI escape codes for cross-platform cursor movement and screen clearing</li>
+                <li>Adjustable terminal width detection</li>
+                <li>Supports smooth animation via time-based sine wave shifting</li>
+            </ul>
+
+        </main>
+
+        <footer class="site-footer">
+            <p>Alex Wardega | Created in New Zealand</p>
+            <p class="credits">
+                Check this websites source out on my
+              <a href="https://github.com/0lekW" target="_blank" rel="noopener">GitHub</a>.
+            </p>
+          </footer>
+
+    </body>
+</html>
