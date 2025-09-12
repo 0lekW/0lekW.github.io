@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang=pl>
+<head>
+  <meta name=viewport content="width=device-width,initial-scale=1">
+  <meta name=description content="olekViz - Projekt">
+  <meta name=author content="Alex Wardega">
+  <title>olekViz — Alex Wardega</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link rel=stylesheet href="/assets/style.css">
+</head>
+<body>
+<div id="particles-js"></div>
+<header class=site-header>
+  <nav class=site-nav>
+    <a class=logo href=/pl>Alex Wardega</a>
+    <ul class=menu>
+      <li><a href=/pl/about>O&nbsp;mnie</a></li>
+      <li><a href=/pl/experience>Doświadczenie</a></li>
+      <li><a href=/pl/projects class=active>Projekty</a></li>
+      <li><a href=/pl/contact>Kontakt</a></li>
+    </ul>
+    <ul class=menu>
+      <li><a href=/en/projects/olekViz/>English</a></li>
+    </ul>
+  </nav>
+  <style>.menu .active{font-weight:700}</style>
+</header>
+<main class=content>
+  <figure class=full-width><picture><img src=/images/olekviz.png alt="olekViz" loading=lazy decoding=async></picture></figure>
+  <div class="showcase-card">
+    <div class="showcase-header"><img src=/images/olekvizlogo.png class="project-icon"><h1>olekViz</h1></div>
+    <div class="tech-stack">
+      <div class="tech-badge"><div class=tech-icon><span style="font-size:1.1rem">C++</span></div><span>C++</span></div>
+      <div class="tech-badge"><div class=tech-icon><span style="font-size:1.1rem">AU</span></div><span>Audio</span></div>
+      <div class="tech-badge"><div class=tech-icon><span style="font-size:1.1rem">JU</span></div><span>JUCE</span></div>
+    </div>
+    <p class="project-desc">Inteligentne wizualizacje audio dla systemu lub programu.</p>
+    <a href="" target=_blank><button class="cta-button">Wkrótce</button></a>
+  </div>
+
+  <p>Najnowszy projekt: interaktywna aplikacja Windows wyświetlająca wizualizacje audio dla producentów muzyki.</p>
+  <h2>Dlaczego?</h2>
+  <p>Aby uatrakcyjnić krótkie materiały wideo z procesu produkcji muzyki — czytelne, dynamiczne widoki dźwięku.</p>
+  <h2>Co zawiera?</h2>
+  <ul>
+    <li>Analiza FFT (spectrum)</li>
+    <li>Waveform</li>
+    <li>Przechwytywanie dźwięku systemowego (WASAPI)</li>
+    <li>Obsługa procesów Windows / przechwytywanie</li>
+  </ul>
+</main>
+<footer class="site-footer">
+  <p>Alex Wardega | Stworzone w Nowej Zelandii</p>
+  <p class="credits">Kod źródłowy: <a href="https://github.com/0lekW" target=_blank rel=noopener>GitHub</a>.</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script src="/assets/particles-init.js"></script>
+</body>
+</html>
