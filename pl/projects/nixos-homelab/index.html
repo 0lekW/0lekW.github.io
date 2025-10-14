@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Inżynier oprogramowania – Alex Wardega">
+    <meta name="author" content="Alex Wardega">
+    <title>Alex Wardega</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/assets/style.css" type="text/css" media="all">
+  </head>
+  <body>
+    <div id="particles-js"></div>
+    <header class="site-header">
+      <nav class="site-nav">
+        <a class="logo" href="/pl">Alex Wardega</a>
+        <ul class="menu">
+          <li><a href="/pl/about">O&nbsp;mnie</a></li>
+          <li><a href="/pl/experience">Doświadczenie</a></li>
+          <li><a href="/pl/projects" class="active">Projekty</a></li>
+          <li><a href="/pl/contact">Kontakt</a></li>
+        </ul>
+        <ul class="menu">
+          <li><a href="/en/projects/nixos-homelab">English</a></li>
+        </ul>
+      </nav>
+      <style>
+        .menu .active { font-weight: 700 }
+      </style>
+    </header>
+
+    <main class="content">
+
+      <figure class="full-width">
+        <picture>
+          <img src="/images/nixosBanner.png" alt="Obraz okładkowy" loading="lazy" decoding="async">
+        </picture>
+      </figure>
+
+      <div class="showcase-card">
+        <div class="showcase-header">
+          <img src="/images/nixosLogo.png" class="project-icon" alt="Logo NixOS">
+          <h1>nixos-homelab</h1>
+        </div>
+
+        <div class="tech-stack">
+          <div class="tech-badge">
+            <div class="tech-icon">
+              <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" stroke="#ffffff" aria-hidden="true"><g id="SVGRepo_iconCarrier"><title>file_type_nix</title><path d="M13,11.115,6.183,23.76,4.59,20.87l1.839-3.387-3.651-.01L2,16.029l.8-1.477,5.2.018,1.868-3.447Z" style="fill:#000000;fill-rule:evenodd"></path><path d="M13.527,21.223h13.64l-1.541,2.922-3.658-.011,1.817,3.389-.779,1.449-1.593,0-2.584-4.825-3.722-.008Z" style="fill:#000000;fill-rule:evenodd"></path><path d="M21.467,15.682,14.647,3.037l3.134-.032L19.6,6.4l1.834-3.379h1.557L23.786,4.5,21.174,9.307l1.854,3.455Z" style="fill:#000000;fill-rule:evenodd"></path><path d="M10.542,16.324l6.821,12.645L14.229,29l-1.821-3.4-1.834,3.38H9.016l-.8-1.476L10.831,22.7,8.976,19.243Z" style="fill:#000000;fill-rule:evenodd"></path><path d="M18.464,10.751H4.823L6.365,7.829l3.658.011L8.207,4.451,8.986,3l1.592,0,2.584,4.825,3.722.008Z" style="fill:#000000;fill-rule:evenodd"></path><path d="M19,20.888,25.817,8.244l1.593,2.89L25.571,14.52l3.651.01L30,15.979l-.8,1.477-5.2-.018-1.868,3.447Z" style="fill:#000000;fill-rule:evenodd"></path></g></svg>
+            </div>
+            <span>Nix</span>
+          </div>
+        </div>
+
+        <p class="project-desc">
+          Konfiguracje systemu oparte na flake’ach, zapewniające pełną powtarzalność dla małego, wielomaszynowego homelabu.
+          Jedna maszyna obsługuje pulpity i usługi dostępne dla użytkownika, a druga zapewnia szybkie, nadmiarowe
+          magazynowanie danych oraz udziały sieciowe.
+        </p>
+
+        <a href="https://github.com/0lekW/nixos-config" target="_blank" rel="noopener">
+          <button class="cta-button">Repozytorium</button>
+        </a>
+      </div>
+
+      <h2>Po co?</h2>
+      <p>
+        Repozytorium dotyczy nie tylko maszyn homelabowych, ale jego głównym
+        zastosowaniem są dwa systemy działające 24/7 na strychu. <br>
+        Uruchamiam na nich wiele usług, lecz podstawowe role to przechowywanie plików i sieć. <br><br>
+        Przykładowe funkcje:
+      </p>
+
+      <ul>
+        <li>Blokowanie reklam w całej sieci</li>
+        <li>Pełnoprawny serwer multimediów z automatycznym pobieraniem metadanych</li>
+        <li>Samohostowany serwer zdalnego dostępu do moich maszyn</li>
+        <li>I dużo więcej!</li>
+      </ul>
+
+      <h2>Dlaczego NixOS?</h2>
+      <ul>
+        <li>Powtarzalne buildy — usługi i sieć wracają dokładnie tak, jak określono.</li>
+        <li>Komponowalne profile — role na hostach (dashboard, storage, desktop) współdzielą moduły.</li>
+        <li>Bezpieczne eksperymenty — szybkie wycofanie zmian ułatwia aktualizacje i testy.</li>
+      </ul>
+
+      <h2>Co zawiera ten projekt?</h2>
+      <ul>
+        <li>Konfiguracje NixOS oparte na flake’ach dla wielu maszyn</li>
+        <li>Moduły usług dla Dockera, Dashy, Pi-hole i innych</li>
+        <li>NAS na ZFS z udostępnianiem przez Samba/NFS</li>
+        <li>Deklaratywny reverse proxy, monitoring i stos DNS</li>
+      </ul>
+
+    </main>
+
+    <footer class="site-footer">
+      <p>Alex Wardega | Stworzone w Nowej Zelandii</p>
+      <p class="credits">
+        Zobacz kod źródłowy tej strony na moim
+        <a href="https://github.com/0lekW" target="_blank" rel="noopener">GitHubie</a>.
+      </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="/assets/particles-init.js"></script>
+  </body>
+</html>
