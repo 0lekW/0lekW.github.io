@@ -1,92 +1,120 @@
 <!doctype html>
 <html lang=pl>
-<head>
-  <meta name=viewport content="width=device-width,initial-scale=1">
-  <meta name=description content="Projekty - Alex Wardega">
-  <meta name=author content="Alex Wardega">
-  <title>Projekty — Alex Wardega</title>
-  <link rel="icon" type="image/x-icon" href="/images/assets/favicon.ico">
-  <link rel=stylesheet href="/assets/style.css">
-</head>
-<body>
-<div id="particles-js"></div>
-<header class=site-header>
-  <nav class=site-nav>
-    <a class=logo href=/pl>Alex Wardega</a>
-    <ul class=menu>
-      <li><a href=/pl/about>O&nbsp;mnie</a></li>
-      <li><a href=/pl/experience>Doświadczenie</a></li>
-      <li><a class=active href=/pl/projects>Projekty</a></li>
-      <li><a href=/pl/contact>Kontakt</a></li>
-    </ul>
-    <ul class=menu>
-      <li><a href=/en/projects>English</a></li>
-    </ul>
-  </nav>
-  <style>.menu .active{font-weight:700}</style>
-</header>
-<main class=content>
-  <div class="projects-section-full">
-    <h1>Projekty</h1>
-    <div class="projects-list">
-      <a href="/pl/projects/olekViz/" class="project-card-full">
-        <div class="card-background-full"><img src="/images/projects/olekviz-banner.png" class="background-image-full"></div>
-        <div class="card-content-full">
-          <div class="card-header-full"><img src="/images/projects/olekviz-logo.png" class="project-logo-full"><h2>olekViz</h2></div>
-          <p class="project-description-full">Estetyczne wizualizacje audio (C++ / JUCE).</p>
-        </div>
-      </a>
-      <a href="/pl/projects/ocellai/" class="project-card-full">
-        <div class="card-background-full"><img src="/images/projects/ocellai-banner.png" class="background-image-full"></div>
-        <div class="card-content-full">
-          <div class="card-header-full"><img src="/images/projects/ocellai-logo.png" class="project-logo-full"><h2>Ocell.ai</h2></div>
-          <p class="project-description-full">Narzędzie bio‑security z AI (React + Flask).</p>
-        </div>
-      </a>
-      <a href="/pl/projects/buff-ch-checker/" class="project-card-full">
-        <div class="card-background-full"><img src="/images/projects/buff-ch-checker-banner.png" class="background-image-full"></div>
-        <div class="card-content-full">
-          <div class="card-header-full"><img src="/images/projects/buff-ch-checker-logo.jpg" class="project-logo-full"><h2>buff-ch-checker</h2></div>
-          <p class="project-description-full">Rozszerzenie Firefox i Chrome wyświetlające % niebieskiego na skórkach case hardened.</p>
-        </div>
-      </a>
-      <a href="/pl/projects/xmbWavpp" class="project-card-full">
-        <div class="card-background-full"><img src="/images/projects/xmbwavpp-banner.png" class="background-image-full"></div>
-        <div class="card-content-full">
-          <div class="card-header-full"><img src="/images/projects/xmbwavpp-logo.png" class="project-logo-full"><h2>xmbWavpp</h2></div>
-          <p class="project-description-full">Animacja fali w terminalu.</p>
-        </div>
-      </a>
-      <a href="/pl/projects/nixos-homelab" class="project-card-full">
-        <div class="card-background-full"><img src="/images/projects/nixos-homelab-banner.png" class="background-image-full"></div>
-        <div class="card-content-full">
-          <div class="card-header-full"><img src="/images/projects/nixos-homelab-logo.png" class="project-logo-full"><h2>nixos-homelab</h2></div>
-          <p class="project-description-full">Server domowy NixOS.</p>
-        </div>
-      </a>
-
-      <a href="/pl/projects/cjsonfmt-ui" class="project-card-full">
-        <div class="card-background-full">
-          <img src="/images/projects/cjsonfmt-ui-banner.png" class="background-image-full">
-        </div>
-        <div class="card-content-full">
-          <div class="card-header-full">
-            <img src="/images/projects/cjsonfmt-ui-logo.png" class="project-logo-full">
-            <h2>cjsonfmt-ui</h2>
-          </div>
-          <p class="project-description-full">
-            Interfejs internetowy dla cjsonfmt - szybkiego formatera JSON w języku C.
-          </p>
-        </div>
-      </a>
-    </div>
-  </div>
-</main>
-<footer class="site-footer">
-  <p>Alex Wardega | Stworzone w Nowej Zelandii</p>
-  <p class="credits">Kod źródłowy: <a href="https://github.com/0lekW" target=_blank rel=noopener>GitHub</a>.</p>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-<script src="/assets/particles-init.js"></script>
-</body>
+    <head>
+        <meta name=viewport content="width=device-width,initial-scale=1">
+        <meta name=description content="Projekty - Alex Wardega">
+        <meta name=author content="Alex Wardega">
+        <title>Projekty — Alex Wardega</title>
+        <link rel="icon" type="image/x-icon" href="/images/assets/favicon.ico">
+        <link rel=stylesheet href="/assets/style.css">
+    </head>
+    <body>
+        <div id="particles-js"></div>
+        <header class=site-header>
+            <nav class=site-nav>
+                <a class=logo href=/pl>Alex Wardega</a>
+                <ul class=menu>
+                    <li><a href=/pl/about>O&nbsp;mnie</a></li>
+                    <li><a href=/pl/experience>Doświadczenie</a></li>
+                    <li><a class=active href=/pl/projects>Projekty</a></li>
+                    <li><a href=/pl/contact>Kontakt</a></li>
+                </ul>
+                <ul class=menu>
+                    <li><a href=/en/projects>English</a></li>
+                </ul>
+            </nav>
+            <style>
+                .menu .active {
+                    font-weight: 700
+                }
+            </style>
+        </header>
+        <main class=content>
+            <div class="projects-section-full">
+                <h1>Projekty</h1>
+                <div class="projects-list">
+                    <a href="/pl/projects/olekViz/" class="project-card-full">
+                        <div class="card-background-full">
+                            <img src="/images/projects/olekviz-banner.png" class="background-image-full">
+                        </div>
+                        <div class="card-content-full">
+                            <div class="card-header-full">
+                                <img src="/images/projects/olekviz-logo.png" class="project-logo-full">
+                                <h2>olekViz</h2>
+                            </div>
+                            <p class="project-description-full">Estetyczne wizualizacje audio (C++ / JUCE).</p>
+                        </div>
+                    </a>
+                    <a href="/pl/projects/ocellai/" class="project-card-full">
+                        <div class="card-background-full">
+                            <img src="/images/projects/ocellai-banner.png" class="background-image-full">
+                        </div>
+                        <div class="card-content-full">
+                            <div class="card-header-full">
+                                <img src="/images/projects/ocellai-logo.png" class="project-logo-full">
+                                <h2>Ocell.ai</h2>
+                            </div>
+                            <p class="project-description-full">Narzędzie bio‑security z AI (React + Flask).</p>
+                        </div>
+                    </a>
+                    <a href="/pl/projects/buff-ch-checker/" class="project-card-full">
+                        <div class="card-background-full">
+                            <img src="/images/projects/buff-ch-checker-banner.png" class="background-image-full">
+                        </div>
+                        <div class="card-content-full">
+                            <div class="card-header-full">
+                                <img src="/images/projects/buff-ch-checker-logo.jpg" class="project-logo-full">
+                                <h2>buff-ch-checker</h2>
+                            </div>
+                            <p class="project-description-full">Rozszerzenie Firefox i Chrome wyświetlające % niebieskiego na skórkach case hardened.</p>
+                        </div>
+                    </a>
+                    <a href="/pl/projects/xmbWavpp" class="project-card-full">
+                        <div class="card-background-full">
+                            <img src="/images/projects/xmbwavpp-banner.png" class="background-image-full">
+                        </div>
+                        <div class="card-content-full">
+                            <div class="card-header-full">
+                                <img src="/images/projects/xmbwavpp-logo.png" class="project-logo-full">
+                                <h2>xmbWavpp</h2>
+                            </div>
+                            <p class="project-description-full">Animacja fali w terminalu.</p>
+                        </div>
+                    </a>
+                    <a href="/pl/projects/nixos-homelab" class="project-card-full">
+                        <div class="card-background-full">
+                            <img src="/images/projects/nixos-homelab-banner.png" class="background-image-full">
+                        </div>
+                        <div class="card-content-full">
+                            <div class="card-header-full">
+                                <img src="/images/projects/nixos-homelab-logo.png" class="project-logo-full">
+                                <h2>nixos-homelab</h2>
+                            </div>
+                            <p class="project-description-full">Server domowy NixOS.</p>
+                        </div>
+                    </a>
+                    <a href="/pl/projects/cjsonfmt-ui" class="project-card-full">
+                        <div class="card-background-full">
+                            <img src="/images/projects/cjsonfmt-ui-banner.png" class="background-image-full">
+                        </div>
+                        <div class="card-content-full">
+                            <div class="card-header-full">
+                                <img src="/images/projects/cjsonfmt-ui-logo.png" class="project-logo-full">
+                                <h2>cjsonfmt-ui</h2>
+                            </div>
+                            <p class="project-description-full">
+                                Interfejs internetowy dla cjsonfmt - szybkiego formatera JSON w języku C.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </main>
+        <footer class="site-footer">
+            <p>Alex Wardega | Stworzone w Nowej Zelandii</p>
+            <p class="credits">Kod źródłowy: <a href="https://github.com/0lekW" target="_blank" rel="noopener">GitHub</a>.</p>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+        <script src="/assets/particles-init.js"></script>
+    </body>
 </html>
