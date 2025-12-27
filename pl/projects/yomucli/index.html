@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang=pl>
+    <head>
+        <meta name=viewport content="width=device-width,initial-scale=1">
+        <meta name=description content="yomucli - Projekt">
+        <meta name=author content="Alex Wardega">
+        <title>yomucli — Alex Wardega</title>
+        <link rel="icon" type="image/x-icon" href="/images/assets/favicon.ico">
+        <link rel=stylesheet href="/assets/style.css">
+    </head>
+    <body>
+        <div id="particles-js"></div>
+        <header class=site-header>
+            <nav class=site-nav>
+                <a class=logo href=/pl>Alex Wardega</a>
+                <ul class=menu>
+                    <li><a href=/pl/about>O&nbsp;mnie</a></li>
+                    <li><a href=/pl/experience>Doświadczenie</a></li>
+                    <li><a href=/pl/projects class=active>Projekty</a></li>
+                    <li><a href=/pl/contact>Kontakt</a></li>
+                </ul>
+                <ul class=menu>
+                    <li><a href=/en/projects/yomucli/>English</a></li>
+                </ul>
+            </nav>
+            <style>
+                .menu .active {
+                    font-weight: 700
+                }
+            </style>
+        </header>
+        <main class=content>
+            <figure class=full-width>
+                <picture>
+                    <img src=/images/projects/yomucli-banner.png alt="yomucli" loading=lazy decoding=async>
+                </picture>
+            </figure>
+            <div class="showcase-card">
+                <div class="showcase-header">
+                    <img src=/images/projects/yomucli-logo.png class="project-icon">
+                    <h1>yomucli</h1>
+                </div>
+                <div class="tech-stack">
+                    <div class="tech-badge">
+                        <div class=tech-icon>
+                            <span style="font-size:1.1rem">C++</span>
+                        </div>
+                        <span>C++</span>
+                    </div>
+                </div>
+                <p class="project-desc">Czytnik mangi/komiksów w terminalu z obsługą obrazów inline (kitty).</p>
+                <a href="https://github.com/0lekW/yomucli" target=_blank>
+                    <button class="cta-button">Repozytorium</button>
+                </a>
+            </div>
+
+            <p>Czytnik mangi i komiksów w terminalu wyświetlający obrazy bezpośrednio przy użyciu protokołu inline kitty.</p>
+            <h2>Dlaczego?</h2>
+            <p>Szybki, lekki sposób na czytanie mangi w terminalu bez osobnej aplikacji GUI. Wykorzystuje obsługę obrazów inline terminala kitty.</p>
+            <h2>Co zawiera?</h2>
+            <ul>
+                <li>Obsługa wielu formatów archiwów: CBZ/ZIP, CBR/RAR, CB7/7Z, CBT/TAR, CBA/ACE</li>
+                <li>Wyświetlanie obrazów inline w terminalu kitty</li>
+                <li>Konfigurowalny kierunek czytania (LTR/RTL), tryb strony (pojedyncza/podwójna), tryb dopasowania (fit/fill)</li>
+                <li>Pobieranie metadanych z API AniList z lokalnym cache</li>
+                <li>Śledzenie postępu czytania</li>
+                <li>Zarządzanie biblioteką serii z obsługą miniaturek</li>
+                <li>Sterowanie klawiaturą</li>
+            </ul>
+        </main>
+        <footer class="site-footer">
+            <p>Alex Wardega | Stworzone w Nowej Zelandii</p>
+            <p class="credits">Kod źródłowy: <a href="https://github.com/0lekW" target=_blank rel=noopener>GitHub</a>.</p>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+        <script src="/assets/particles-init.js"></script>
+    </body>
+</html>
+
